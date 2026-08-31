@@ -1,0 +1,349 @@
+{
+  "system_info": {
+    "system_name": "Personal Learning Upgrade System (PLUS)",
+    "north_star": "研究揭示维度与时空是如何从量子微观结构中涌现的 (Quantum Emergence of Spacetime & Dimension)",
+    "user_name": "Wang (qidian11)",
+    "initialized_date": "2026-08-29",
+    "last_updated": "2026-08-31T17:18:00+09:00",
+    "version": "1.0.0"
+  },
+  "overall_stats": {
+    "total_skills": 23,
+    "unlocked_skills": 15,
+    "total_exp": 381,
+    "average_score": 16.57,
+    "max_level_skill": "编程、符号与数值方法 (Lv.3)"
+  },
+  "categories": [
+    {
+      "id": "math_foundations",
+      "name": "数学基础",
+      "icon": "📐",
+      "skills": [
+        {
+          "id": "proof_set_theory",
+          "name": "证明与集合语言",
+          "icon": "📐",
+          "level": 1,
+          "exp": 22,
+          "max_exp": 100,
+          "score": 22,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握集合包含、双包含证明法，需强化严格量词与充要条件证明链条。"
+        },
+        {
+          "id": "linear_algebra_tensors",
+          "name": "线性代数与张量",
+          "icon": "📐",
+          "level": 1,
+          "exp": 25,
+          "max_exp": 100,
+          "score": 25,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握核/像/投影算子、基础特征值与内积正交性；待突破对角化判定与张量积。"
+        },
+        {
+          "id": "multivariable_calculus_ode",
+          "name": "多元微积分与微分方程",
+          "icon": "∫",
+          "level": 0,
+          "exp": 12,
+          "max_exp": 100,
+          "score": 12,
+          "confidence": "low",
+          "status": "active",
+          "notes": "掌握多维梯度，需巩固一阶/二阶常微分方程求解与分离变量法。"
+        }
+      ]
+    },
+    {
+      "id": "analysis",
+      "name": "分析学",
+      "icon": "🔬",
+      "skills": [
+        {
+          "id": "real_analysis_measure",
+          "name": "实分析与测度论",
+          "icon": "📊",
+          "level": 1,
+          "exp": 32,
+          "max_exp": 100,
+          "score": 32,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握ε-N极限证明、单调有界定理与一致连续反例构造；测度论尚未起步。"
+        },
+        {
+          "id": "complex_analysis",
+          "name": "复分析",
+          "icon": "🌀",
+          "level": 1,
+          "exp": 24,
+          "max_exp": 100,
+          "score": 24,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握复数指数形式、Cauchy-Riemann局部复可微与整函数判断；留数定理待测。"
+        },
+        {
+          "id": "functional_analysis_operators",
+          "name": "泛函分析与算子代数",
+          "icon": "📡",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "量子力学无限维态空间与全息冯·诺依曼代数的核心工具。当前未起步。"
+        }
+      ]
+    },
+    {
+      "id": "geometry_topology_category",
+      "name": "几何、拓扑与范畴论",
+      "icon": "🧩",
+      "skills": [
+        {
+          "id": "point_set_topology",
+          "name": "点集拓扑",
+          "icon": "🧩",
+          "level": 1,
+          "exp": 28,
+          "max_exp": 100,
+          "score": 28,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握拓扑公理、开闭集、无限交闭包及紧致性开覆盖定义。"
+        },
+        {
+          "id": "differential_geometry_manifolds",
+          "name": "微分几何与流形",
+          "icon": "🔗",
+          "level": 1,
+          "exp": 22,
+          "max_exp": 100,
+          "score": 22,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握局部欧氏流形、切空间与度规概念；联络、协变导数与曲率待学。"
+        },
+        {
+          "id": "algebraic_topology",
+          "name": "代数拓扑",
+          "icon": "🏔️",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "基本群、同调与同伦论。研究拓扑量子相与时空拓扑性质的关键语言。"
+        },
+        {
+          "id": "lie_groups_algebras",
+          "name": "李群与李代数",
+          "icon": "🔄",
+          "level": 0,
+          "exp": 12,
+          "max_exp": 100,
+          "score": 12,
+          "confidence": "low",
+          "status": "active",
+          "notes": "掌握群的四条公理；需建立李群流形结构、李代数括号及群表示论。"
+        },
+        {
+          "id": "category_theory",
+          "name": "范畴论与高阶范畴",
+          "icon": "💎",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "包含对象、态射、函子、自然变换、幺半范畴与融合范畴，是拓扑序与量子拓扑场论的现代代数语言。"
+        }
+      ]
+    },
+    {
+      "id": "core_physics",
+      "name": "物理主干理论",
+      "icon": "⚛️",
+      "skills": [
+        {
+          "id": "classical_mechanics_electrodynamics",
+          "name": "经典力学与电磁学",
+          "icon": "⚙️",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "拉格朗日/哈密顿力学与麦克斯韦方程组，连接场论与引力的必经之路。"
+        },
+        {
+          "id": "special_general_relativity",
+          "name": "狭义与广义相对论",
+          "icon": "🌌",
+          "level": 0,
+          "exp": 10,
+          "max_exp": 100,
+          "score": 10,
+          "confidence": "low",
+          "status": "active",
+          "notes": "掌握洛伦兹变换与不变时空间隔；广义相对论爱因斯坦场方程待起步。"
+        },
+        {
+          "id": "quantum_mechanics",
+          "name": "量子力学",
+          "icon": "⚛️",
+          "level": 0,
+          "exp": 18,
+          "max_exp": 100,
+          "score": 18,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "掌握态叠加、Pauli算符与测量塌缩；需建立算符代数与定态/含时演化。"
+        },
+        {
+          "id": "quantum_field_theory",
+          "name": "量子场论",
+          "icon": "📡",
+          "level": 1,
+          "exp": 30,
+          "max_exp": 100,
+          "score": 30,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "理解场激发为粒子、作用量时空积分、Euler-Lagrange与Klein-Gordon方程；正则量子化待攻克。"
+        },
+        {
+          "id": "statistical_physics_thermodynamics",
+          "name": "统计物理与热力学",
+          "icon": "🌡️",
+          "level": 0,
+          "exp": 8,
+          "max_exp": 100,
+          "score": 8,
+          "confidence": "low",
+          "status": "active",
+          "notes": "掌握微观态与等概率假说；需深入系综理论、配分函数与纠缠熵微观起源。"
+        }
+      ]
+    },
+    {
+      "id": "quantum_spacetime_emergence",
+      "name": "量子多体、信息与时空涌现",
+      "icon": "🚀",
+      "skills": [
+        {
+          "id": "topological_order_matter",
+          "name": "拓扑序与量子物态",
+          "icon": "🌀",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "拓扑简并度、非阿贝尔任意子、张量网络态(MPS/PEPS/MERA)与长程纠缠，是空间几何与规范场涌现的关键凝聚态机制。"
+        },
+        {
+          "id": "quantum_information_computation",
+          "name": "量子信息与计算",
+          "icon": "🧠",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "量子纠缠度量(Von Neumann熵/Rényi熵)、量子纠错码(QECC)及量子线路复杂度。"
+        },
+        {
+          "id": "holography_ads_cft",
+          "name": "全息与 AdS/CFT",
+          "icon": "🪞",
+          "level": 0,
+          "exp": 0,
+          "max_exp": 100,
+          "score": 0,
+          "confidence": "high",
+          "status": "locked",
+          "notes": "全息引力对偶、Ryu-Takayanagi面积公式 (S=A/4G)、ER=EPR猜想与时空涌现核心。"
+        },
+        {
+          "id": "quantum_gravity_string_theory",
+          "name": "量子引力与弦论基础",
+          "icon": "🕳️",
+          "level": 0,
+          "exp": 15,
+          "max_exp": 100,
+          "score": 15,
+          "confidence": "low",
+          "status": "active",
+          "notes": "了解弦振动与临界10维时空概念；黑洞热力学与非微扰引力机制待建立。"
+        }
+      ]
+    },
+    {
+      "id": "research_tools_languages",
+      "name": "科研工具与语言",
+      "icon": "🛠️",
+      "skills": [
+        {
+          "id": "academic_english_reading_writing",
+          "name": "英语文献阅读与学术写作",
+          "icon": "📝",
+          "level": 1,
+          "exp": 45,
+          "max_exp": 100,
+          "score": 45,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "能读懂二维phi^4归一化流论文并写出Jacobian变换公式；需提升独立复现与学术论文写作。"
+        },
+        {
+          "id": "programming_scientific_computing",
+          "name": "编程、符号与数值方法",
+          "icon": "💻",
+          "level": 3,
+          "exp": 65,
+          "max_exp": 100,
+          "score": 65,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "具备全栈/系统工程开发经验；未来聚焦符号推导(SymPy)与张量网络/格点蒙特卡洛模拟。"
+        },
+        {
+          "id": "general_english",
+          "name": "英语 (通用交流)",
+          "icon": "🇬🇧",
+          "level": 1,
+          "exp": 35,
+          "max_exp": 100,
+          "score": 35,
+          "confidence": "medium",
+          "status": "active",
+          "notes": "具备数学物理命题英文表达能力，需加强严谨句式、学术词汇与论文规范。"
+        },
+        {
+          "id": "japanese",
+          "name": "日语",
+          "icon": "🇯🇵",
+          "level": 0,
+          "exp": 5,
+          "max_exp": 100,
+          "score": 5,
+          "confidence": "high",
+          "status": "active",
+          "notes": "已掌握五十音图及40-50个基础词汇；待建立基础语法与句型体系。"
+        }
+      ]
+    }
+  ]
+}
