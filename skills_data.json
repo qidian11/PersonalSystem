@@ -1,19 +1,14 @@
 {
   "system_info": {
     "system_name": "Personal Learning Upgrade System (PLUS)",
-    "north_star": "研究揭示维度与时空是如何从量子微观结构中涌现的 (Quantum Emergence of Spacetime & Dimension)",
+    "north_star": "研究揭示维度与时空是如何从量子微观结构中涌现的",
     "user_name": "Wang (qidian11)",
     "initialized_date": "2026-08-29",
-    "last_updated": "2026-08-31T17:18:00+09:00",
-    "version": "1.0.0"
+    "last_updated": "2026-08-31T17:48:00+09:00",
+    "version": "2.0.0"
   },
-  "overall_stats": {
-    "total_skills": 23,
-    "unlocked_skills": 15,
-    "total_exp": 381,
-    "average_score": 16.57,
-    "max_level_skill": "编程、符号与数值方法 (Lv.3)"
-  },
+  "level_thresholds": [0, 30, 80, 180, 350, 600, 1000, 1600, 2500, 4000, 6000],
+  "level_titles": ["🌱 萌新", "📖 入门", "📝 见习", "⚔️ 学徒", "🛡️ 熟练", "⚡ 精通", "🔥 专精", "💎 大师", "👑 宗师", "🌟 传说", "🏆 不朽"],
   "categories": [
     {
       "id": "math_foundations",
@@ -24,36 +19,48 @@
           "id": "proof_set_theory",
           "name": "证明与集合语言",
           "icon": "📐",
-          "level": 1,
           "exp": 22,
-          "max_exp": 100,
-          "score": 22,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 80, "desc": "独立完成集合等价的完整双包含证明"},
+            {"exp": 180, "desc": "独立写出 ε-δ 类量化证明全过程"},
+            {"exp": 350, "desc": "掌握反证法、数学归纳法与良序原理的灵活运用"}
+          ],
           "notes": "掌握集合包含、双包含证明法，需强化严格量词与充要条件证明链条。"
         },
         {
           "id": "linear_algebra_tensors",
           "name": "线性代数与张量",
           "icon": "📐",
-          "level": 1,
           "exp": 25,
-          "max_exp": 100,
-          "score": 25,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 80, "desc": "掌握对角化判定准则与谱定理"},
+            {"exp": 180, "desc": "独立证明有限维谱定理"},
+            {"exp": 350, "desc": "理解并运用张量积构造量子多体态空间"}
+          ],
           "notes": "掌握核/像/投影算子、基础特征值与内积正交性；待突破对角化判定与张量积。"
         },
         {
           "id": "multivariable_calculus_ode",
           "name": "多元微积分与微分方程",
           "icon": "∫",
-          "level": 0,
           "exp": 12,
-          "max_exp": 100,
-          "score": 12,
+          "level": 0,
           "confidence": "low",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 80, "desc": "熟练掌握分离变量法与初值问题"},
+            {"exp": 180, "desc": "独立完成多重积分、Stokes 定理计算"},
+            {"exp": 350, "desc": "掌握偏微分方程分类与 Green 函数基础"}
+          ],
           "notes": "掌握多维梯度，需巩固一阶/二阶常微分方程求解与分离变量法。"
         }
       ]
@@ -67,36 +74,48 @@
           "id": "real_analysis_measure",
           "name": "实分析与测度论",
           "icon": "📊",
-          "level": 1,
           "exp": 32,
-          "max_exp": 100,
-          "score": 32,
+          "level": 1,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["proof_set_theory"],
+          "milestones": [
+            {"exp": 80, "desc": "独立完成 ε-N/ε-δ 证明与一致连续判定"},
+            {"exp": 180, "desc": "掌握 Lebesgue 测度构造与控制收敛定理"},
+            {"exp": 350, "desc": "熟练运用 Lp 空间、Hölder 与 Minkowski 不等式"}
+          ],
           "notes": "掌握ε-N极限证明、单调有界定理与一致连续反例构造；测度论尚未起步。"
         },
         {
           "id": "complex_analysis",
           "name": "复分析",
           "icon": "🌀",
-          "level": 1,
           "exp": 24,
-          "max_exp": 100,
-          "score": 24,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["real_analysis_measure"],
+          "milestones": [
+            {"exp": 80, "desc": "独立判定解析性并计算基础 Cauchy 积分"},
+            {"exp": 180, "desc": "掌握留数定理与实积分计算"},
+            {"exp": 350, "desc": "理解共形映射与 Riemann 映射定理"}
+          ],
           "notes": "掌握复数指数形式、Cauchy-Riemann局部复可微与整函数判断；留数定理待测。"
         },
         {
           "id": "functional_analysis_operators",
           "name": "泛函分析与算子代数",
           "icon": "📡",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["real_analysis_measure", "linear_algebra_tensors"],
+          "milestones": [
+            {"exp": 80, "desc": "理解 Hilbert 空间公理与正交分解"},
+            {"exp": 180, "desc": "掌握 Riesz 表示定理与谱定理(无穷维)"},
+            {"exp": 600, "desc": "理解 C*-代数与 von Neumann 代数 Type 分类"}
+          ],
           "notes": "量子力学无限维态空间与全息冯·诺依曼代数的核心工具。当前未起步。"
         }
       ]
@@ -110,60 +129,80 @@
           "id": "point_set_topology",
           "name": "点集拓扑",
           "icon": "🧩",
-          "level": 1,
           "exp": 28,
-          "max_exp": 100,
-          "score": 28,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["proof_set_theory"],
+          "milestones": [
+            {"exp": 80, "desc": "独立证明紧致集上连续函数有界"},
+            {"exp": 180, "desc": "掌握连通性、商拓扑与乘积拓扑"},
+            {"exp": 350, "desc": "理解 Urysohn 引理与 Tychonoff 定理"}
+          ],
           "notes": "掌握拓扑公理、开闭集、无限交闭包及紧致性开覆盖定义。"
         },
         {
           "id": "differential_geometry_manifolds",
           "name": "微分几何与流形",
           "icon": "🔗",
-          "level": 1,
           "exp": 22,
-          "max_exp": 100,
-          "score": 22,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["multivariable_calculus_ode", "linear_algebra_tensors", "point_set_topology"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握切空间、余切空间与坐标变换"},
+            {"exp": 180, "desc": "独立计算 Christoffel 符号与 Riemann 曲率张量"},
+            {"exp": 600, "desc": "理解纤维丛、联络与特征类"}
+          ],
           "notes": "掌握局部欧氏流形、切空间与度规概念；联络、协变导数与曲率待学。"
         },
         {
           "id": "algebraic_topology",
           "name": "代数拓扑",
           "icon": "🏔️",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["point_set_topology", "linear_algebra_tensors"],
+          "milestones": [
+            {"exp": 80, "desc": "计算常见空间的基本群 π₁"},
+            {"exp": 180, "desc": "掌握同调群与 Mayer-Vietoris 序列"},
+            {"exp": 350, "desc": "理解上同调环与 Poincaré 对偶"}
+          ],
           "notes": "基本群、同调与同伦论。研究拓扑量子相与时空拓扑性质的关键语言。"
         },
         {
           "id": "lie_groups_algebras",
           "name": "李群与李代数",
           "icon": "🔄",
-          "level": 0,
           "exp": 12,
-          "max_exp": 100,
-          "score": 12,
+          "level": 0,
           "confidence": "low",
           "status": "active",
+          "prerequisites": ["linear_algebra_tensors", "differential_geometry_manifolds"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握 SO(3), SU(2) 的矩阵表示与李代数"},
+            {"exp": 180, "desc": "理解 BCH 公式与伴随表示"},
+            {"exp": 350, "desc": "掌握洛伦兹群 SO(1,3) 与自旋表示"}
+          ],
           "notes": "掌握群的四条公理；需建立李群流形结构、李代数括号及群表示论。"
         },
         {
           "id": "category_theory",
           "name": "范畴论与高阶范畴",
           "icon": "💎",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["proof_set_theory", "linear_algebra_tensors"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握范畴、函子、自然变换与 Yoneda 引理"},
+            {"exp": 180, "desc": "理解伴随函子与极限/余极限"},
+            {"exp": 600, "desc": "掌握幺半范畴、辫子范畴与融合范畴 (拓扑序对接)"}
+          ],
           "notes": "包含对象、态射、函子、自然变换、幺半范畴与融合范畴，是拓扑序与量子拓扑场论的现代代数语言。"
         }
       ]
@@ -177,60 +216,80 @@
           "id": "classical_mechanics_electrodynamics",
           "name": "经典力学与电磁学",
           "icon": "⚙️",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["multivariable_calculus_ode"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握拉格朗日方程与 Euler-Lagrange 推导"},
+            {"exp": 180, "desc": "独立推导 Maxwell 方程组与电磁波动方程"},
+            {"exp": 350, "desc": "掌握哈密顿力学、Noether 定理与规范变换"}
+          ],
           "notes": "拉格朗日/哈密顿力学与麦克斯韦方程组，连接场论与引力的必经之路。"
         },
         {
           "id": "special_general_relativity",
           "name": "狭义与广义相对论",
           "icon": "🌌",
-          "level": 0,
           "exp": 10,
-          "max_exp": 100,
-          "score": 10,
+          "level": 0,
           "confidence": "low",
           "status": "active",
+          "prerequisites": ["differential_geometry_manifolds", "classical_mechanics_electrodynamics"],
+          "milestones": [
+            {"exp": 80, "desc": "独立推导洛伦兹变换与尺缩/钟慢效应"},
+            {"exp": 180, "desc": "掌握爱因斯坦场方程与 Schwarzschild 解"},
+            {"exp": 600, "desc": "理解黑洞热力学四定律与 Penrose 图"}
+          ],
           "notes": "掌握洛伦兹变换与不变时空间隔；广义相对论爱因斯坦场方程待起步。"
         },
         {
           "id": "quantum_mechanics",
           "name": "量子力学",
           "icon": "⚛️",
-          "level": 0,
           "exp": 18,
-          "max_exp": 100,
-          "score": 18,
+          "level": 0,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["linear_algebra_tensors"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握算符代数、对易关系与期望值计算"},
+            {"exp": 180, "desc": "独立求解氢原子能级与角动量耦合"},
+            {"exp": 350, "desc": "掌握密度矩阵、纠缠态与路径积分"}
+          ],
           "notes": "掌握态叠加、Pauli算符与测量塌缩；需建立算符代数与定态/含时演化。"
         },
         {
           "id": "quantum_field_theory",
           "name": "量子场论",
           "icon": "📡",
-          "level": 1,
           "exp": 30,
-          "max_exp": 100,
-          "score": 30,
+          "level": 1,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": ["quantum_mechanics", "special_general_relativity", "classical_mechanics_electrodynamics"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握标量场正则量子化与传播子"},
+            {"exp": 180, "desc": "独立计算 QED 一阶 Feynman 图"},
+            {"exp": 600, "desc": "理解重整化群流与渐近自由"}
+          ],
           "notes": "理解场激发为粒子、作用量时空积分、Euler-Lagrange与Klein-Gordon方程；正则量子化待攻克。"
         },
         {
           "id": "statistical_physics_thermodynamics",
           "name": "统计物理与热力学",
           "icon": "🌡️",
-          "level": 0,
           "exp": 8,
-          "max_exp": 100,
-          "score": 8,
+          "level": 0,
           "confidence": "low",
           "status": "active",
+          "prerequisites": ["quantum_mechanics"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握微正则/正则/巨正则系综与配分函数"},
+            {"exp": 180, "desc": "独立推导 Bose-Einstein 与 Fermi-Dirac 分布"},
+            {"exp": 350, "desc": "理解相变、临界指数与重整化群连接"}
+          ],
           "notes": "掌握微观态与等概率假说；需深入系综理论、配分函数与纠缠熵微观起源。"
         }
       ]
@@ -244,48 +303,64 @@
           "id": "topological_order_matter",
           "name": "拓扑序与量子物态",
           "icon": "🌀",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
-          "notes": "拓扑简并度、非阿贝尔任意子、张量网络态(MPS/PEPS/MERA)与长程纠缠，是空间几何与规范场涌现的关键凝聚态机制。"
+          "prerequisites": ["quantum_mechanics", "point_set_topology", "statistical_physics_thermodynamics"],
+          "milestones": [
+            {"exp": 80, "desc": "理解 Toric Code 模型与拓扑简并度"},
+            {"exp": 180, "desc": "掌握非阿贝尔任意子统计与辫子群"},
+            {"exp": 600, "desc": "独立分析张量网络态 (MERA) 的几何涌现"}
+          ],
+          "notes": "拓扑简并度、非阿贝尔任意子、张量网络态(MPS/PEPS/MERA)与长程纠缠。"
         },
         {
           "id": "quantum_information_computation",
           "name": "量子信息与计算",
           "icon": "🧠",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["quantum_mechanics", "linear_algebra_tensors"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握量子比特线路、Bell 态与纠缠度量"},
+            {"exp": 180, "desc": "理解量子纠错码 (Stabilizer Code) 原理"},
+            {"exp": 350, "desc": "掌握 Von Neumann 熵、Rényi 熵与 Page 曲线"}
+          ],
           "notes": "量子纠缠度量(Von Neumann熵/Rényi熵)、量子纠错码(QECC)及量子线路复杂度。"
         },
         {
           "id": "holography_ads_cft",
           "name": "全息与 AdS/CFT",
           "icon": "🪞",
-          "level": 0,
           "exp": 0,
-          "max_exp": 100,
-          "score": 0,
-          "confidence": "high",
+          "level": 0,
+          "confidence": "unassessed",
           "status": "locked",
+          "prerequisites": ["quantum_field_theory", "special_general_relativity", "quantum_information_computation"],
+          "milestones": [
+            {"exp": 80, "desc": "理解 AdS 空间几何与 CFT 对应字典"},
+            {"exp": 180, "desc": "独立推导 Ryu-Takayanagi 面积公式"},
+            {"exp": 600, "desc": "理解 ER=EPR、体重构与全息量子纠错码"}
+          ],
           "notes": "全息引力对偶、Ryu-Takayanagi面积公式 (S=A/4G)、ER=EPR猜想与时空涌现核心。"
         },
         {
           "id": "quantum_gravity_string_theory",
           "name": "量子引力与弦论基础",
           "icon": "🕳️",
-          "level": 0,
           "exp": 15,
-          "max_exp": 100,
-          "score": 15,
+          "level": 0,
           "confidence": "low",
           "status": "active",
+          "prerequisites": ["quantum_field_theory", "special_general_relativity"],
+          "milestones": [
+            {"exp": 80, "desc": "掌握弦的 Nambu-Goto 作用量与振动模式"},
+            {"exp": 180, "desc": "理解紧致化、额外维与 Kaluza-Klein 机制"},
+            {"exp": 600, "desc": "理解黑洞微观态计数与 Bekenstein-Hawking 公式"}
+          ],
           "notes": "了解弦振动与临界10维时空概念；黑洞热力学与非微扰引力机制待建立。"
         }
       ]
@@ -299,48 +374,64 @@
           "id": "academic_english_reading_writing",
           "name": "英语文献阅读与学术写作",
           "icon": "📝",
-          "level": 1,
           "exp": 45,
-          "max_exp": 100,
-          "score": 45,
+          "level": 1,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 80, "desc": "独立精读一篇完整 PRL/PRD 级别论文并总结"},
+            {"exp": 180, "desc": "用英文撰写一篇完整的研究笔记/报告"},
+            {"exp": 350, "desc": "独立完成一篇论文初稿的 Introduction + Methods"}
+          ],
           "notes": "能读懂二维phi^4归一化流论文并写出Jacobian变换公式；需提升独立复现与学术论文写作。"
         },
         {
           "id": "programming_scientific_computing",
           "name": "编程、符号与数值方法",
           "icon": "💻",
+          "exp": 200,
           "level": 3,
-          "exp": 65,
-          "max_exp": 100,
-          "score": 65,
           "confidence": "medium",
           "status": "active",
-          "notes": "具备全栈/系统工程开发经验；未来聚焦符号推导(SymPy)与张量网络/格点蒙特卡洛模拟。"
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 350, "desc": "用 SymPy 独立完成符号推导验证"},
+            {"exp": 600, "desc": "编写格点蒙特卡洛或张量网络数值模拟"},
+            {"exp": 1000, "desc": "独立复现前沿论文的完整计算程序"}
+          ],
+          "notes": "具备全栈/系统工程开发经验(200 EXP 职业基础经验授予)；未来聚焦符号推导(SymPy)与张量网络/格点蒙特卡洛模拟。"
         },
         {
           "id": "general_english",
           "name": "英语 (通用交流)",
           "icon": "🇬🇧",
-          "level": 1,
           "exp": 35,
-          "max_exp": 100,
-          "score": 35,
+          "level": 1,
           "confidence": "medium",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 80, "desc": "能用完整英文段落解释一个数学/物理概念"},
+            {"exp": 180, "desc": "能流畅进行学术英语讨论(口语/书面)"},
+            {"exp": 350, "desc": "达到 IELTS 7+ 或同等学术英语水平"}
+          ],
           "notes": "具备数学物理命题英文表达能力，需加强严谨句式、学术词汇与论文规范。"
         },
         {
           "id": "japanese",
           "name": "日语",
           "icon": "🇯🇵",
-          "level": 0,
           "exp": 5,
-          "max_exp": 100,
-          "score": 5,
+          "level": 0,
           "confidence": "high",
           "status": "active",
+          "prerequisites": [],
+          "milestones": [
+            {"exp": 30, "desc": "掌握五十音图、100+基础词汇与基础句型"},
+            {"exp": 80, "desc": "通过 JLPT N5 或同等水平"},
+            {"exp": 180, "desc": "能阅读简单日语科普文章"}
+          ],
           "notes": "已掌握五十音图及40-50个基础词汇；待建立基础语法与句型体系。"
         }
       ]
