@@ -1,6 +1,7 @@
 # 时空与维度涌现研究路线图 (Spacetime Emergence Research Roadmap)
 
 > **North Star (终极目标)**: 揭示维度与时空几何是如何从微观量子自由度（量子纠缠、拓扑序、张量网络与全息对偶）中涌现出来的。
+> **教材与文献指引**: 详见 [textbooks_guide.md](file:///c:/Users/Wang/PersonalSystem/textbooks_guide.md)
 
 ---
 

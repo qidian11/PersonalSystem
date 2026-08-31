@@ -88,7 +88,7 @@ c:\Users\Wang\PersonalSystem\
 ├── profile.md                # 用户全景能力档案与实时 ASCII 控制台看板
 ├── skills_data.json          # 23项技能的机器可读底层数据库 (SSOT)
 ├── roadmap.md                # 终极目标：时空与维度涌现学术路线图
+├── textbooks_guide.md        # 23项技能权威推崇教材与前沿文献指南
 ├── daily-log.md              # 每日学习汇报流水与升级审计日志
-├── render_dashboard.ps1      # PowerShell 控制台看板快速生成脚本
 └── 对话.md                   # 历史评测与初始对话记录
 ```
