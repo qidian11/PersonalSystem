@@ -387,6 +387,111 @@
           "notes": "已掌握五十音图及40-50个基础词汇；待建立基础语法与句型体系。"
         }
       ]
+    },
+    {
+      "id": "fitness_hypertrophy",
+      "name": "穿衣显壮 · 力量与体格",
+      "icon": "🏋️‍♂️",
+      "skills": [
+        {
+          "id": "delts_width",
+          "name": "三角肌与肩宽",
+          "icon": "🥥",
+          "exp": 0,
+          "level": 0,
+          "target_level": 5,
+          "target_exp": 600,
+          "target_reason": "横向拉宽骨架，撑起肩线视觉",
+          "confidence": "unassessed",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "待首轮侧平举/推举打卡。"
+        },
+        {
+          "id": "traps_upper_back",
+          "name": "上背与斜方肌",
+          "icon": "🦏",
+          "exp": 0,
+          "level": 0,
+          "target_level": 5,
+          "target_exp": 600,
+          "target_reason": "撑满后颈与衣领，消除单薄感",
+          "confidence": "unassessed",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "待首轮耸肩/划船打卡。"
+        },
+        {
+          "id": "lats_v_taper",
+          "name": "背阔肌与倒三角",
+          "icon": "📐",
+          "exp": 0,
+          "level": 0,
+          "target_level": 5,
+          "target_exp": 600,
+          "target_reason": "打造极致腰肩比与飞鼠背",
+          "confidence": "unassessed",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "待首轮引体向上/高位下拉打卡。"
+        },
+        {
+          "id": "upper_chest_push",
+          "name": "上胸与推力基石",
+          "icon": "🛡️",
+          "exp": 35,
+          "level": 1,
+          "target_level": 4,
+          "target_exp": 350,
+          "target_reason": "填满锁骨下方空隙，撑起前胸立体度",
+          "confidence": "medium",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "首战完成上斜哑铃卧推 10kg×2×10次×3组 + 俯卧撑 25×2组 + 双杠支撑。"
+        },
+        {
+          "id": "arms_hypertrophy",
+          "name": "手臂围度与二三头",
+          "icon": "🦾",
+          "exp": 35,
+          "level": 1,
+          "target_level": 5,
+          "target_exp": 600,
+          "target_reason": "目标臂围 38-40cm，撑爆短袖袖口",
+          "confidence": "medium",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "首战完成锤式弯举 10kg×2×10次×3组 + 自重双杠臂屈伸 10次×3组。"
+        },
+        {
+          "id": "legs_foundation",
+          "name": "下盘深蹲与地基",
+          "icon": "⚙️",
+          "exp": 0,
+          "level": 0,
+          "target_level": 4,
+          "target_exp": 350,
+          "target_reason": "提供力量底座与自体睾酮分泌刺激",
+          "confidence": "unassessed",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "待深蹲/RDL打卡。"
+        },
+        {
+          "id": "nutrition_bulking",
+          "name": "营养热量与体重管理",
+          "icon": "🥩",
+          "exp": 20,
+          "level": 0,
+          "target_level": 5,
+          "target_exp": 600,
+          "target_reason": "从 66kg 稳步增重至 75kg (体脂 13%)",
+          "confidence": "medium",
+          "status": "active",
+          "prerequisites": [],
+          "notes": "当前体重 66.0kg，目标每日热量 2500kcal + 120g 蛋白质。"
+        }
+      ]
     }
   ]
 }
