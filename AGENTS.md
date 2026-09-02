@@ -87,8 +87,8 @@ $$\Delta \text{EXP} = (\text{有效学习时间(h)} \times 10) + \text{任务难
 1. **核算与点评**：解答用户疑问，计算对应学术与健身技能的 EXP 增加值。
 2. **触发升级判定**：如果经验值溢出，提升技能等级 (Level Up) 并解锁后续前置技能。
 3. **更新三大本地档案**：
-   - `skills_data.json`: 更新底层数值与时间戳。
-   - `daily-log.md`: 追加审计记录。
+   - `skills_data.json`: 更新底层数值与精确 ISO 时间戳 (`last_updated`)。
+   - `daily-log.md`: 追加审计记录，且每条记录必须包含精确时间戳 (`- **记录时间**: YYYY-MM-DD HH:mm:ss (+09:00)`)。
    - `profile.md`: 重新生成全景 ASCII 控制台面板。
 4. **执行 Git 维护**：自动生成 commit 并推送至 GitHub 远端。
 5. **在聊天中输出【精致版 ASCII 控制台面板】**：直接将最新的终端看板呈现给用户。
