@@ -4,7 +4,7 @@
     "north_star": "研究揭示维度与时空是如何从量子微观结构中涌现的",
     "user_name": "Wang (qidian11)",
     "initialized_date": "2026-08-29",
-    "last_updated": "2026-08-31T17:55:00+09:00",
+    "last_updated": "2026-09-04T07:52:30+09:00",
     "version": "2.1.0"
   },
   "level_thresholds": [0, 30, 80, 180, 350, 600, 1000, 1600, 2500, 4000, 6000],
@@ -250,15 +250,15 @@
           "id": "statistical_physics_thermodynamics",
           "name": "统计物理与热力学",
           "icon": "🌡️",
-          "exp": 8,
-          "level": 0,
+          "exp": 43,
+          "level": 1,
           "target_level": 5,
           "target_exp": 600,
           "target_reason": "熵的统计与信息论含义是全息原理(S=A/4G)与黑洞热力学的核心",
-          "confidence": "low",
+          "confidence": "medium",
           "status": "active",
           "prerequisites": ["quantum_mechanics"],
-          "notes": "掌握微观态与等概率假说；需深入系综理论、配分函数与纠缠熵微观起源。"
+          "notes": "完成 Blundell《热物理概念》Ch 1-4 阅读及 Ch 1-3 习题推导；掌握理想气体状态方程、热力学第一定律、概率分布与 Boltzmann 因子。"
         }
       ]
     },
