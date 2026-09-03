@@ -258,7 +258,7 @@
           "confidence": "medium",
           "status": "active",
           "prerequisites": ["quantum_mechanics"],
-          "notes": "完成 Blundell《热物理概念》Ch 1-4 阅读及 Ch 1-3 习题推导；掌握理想气体状态方程、热力学第一定律、概率分布与 Boltzmann 因子。"
+          "notes": "主攻教材：Blundell《热物理概念（第2版）》（完整目录见 blundell_thermal_physics_toc.md）。已通关 Ch 1-4 阅读及 Ch 1-3 习题推导；掌握理想气体状态方程、热力学第一定律、概率分布与 Boltzmann 因子。"
         }
       ]
     },

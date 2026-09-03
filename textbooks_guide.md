@@ -121,9 +121,12 @@
   - **特点**: 路径积分视角的集大成者，物理洞察深刻，文笔极其优美幽默。
 
 ### 4.5 统计物理与热力学 (Statistical Mechanics & Thermodynamics)
-- **推荐教材**: 《Statistical Mechanics》 (3rd Edition) —— R. K. Pathria & Paul D. Beale (Elsevier)
-  - **中文译本**: 《统计力学》（高等教育出版社）
-  - **场论与临界现象进阶**: 《Statistical Physics of Fields》 —— Mehran Kardar (剑桥大学出版社，中译《场的统计物理学》)
+- **🔥 核心通关教材 (当前研读)**: 《Concepts in Thermal Physics》 (2nd Edition) —— Stephen J. Blundell & Katherine M. Blundell (牛津大学出版社)
+  - **中文译本**: 《热物理概念：热力学与统计物理学（第2版）》（高等教育出版社）
+  - **完整目录索引**: 📄 [blundell_thermal_physics_toc.md](file:///d:/Codex/PersonalSystem/blundell_thermal_physics_toc.md)（含 37 章全景体量与附录数学工具）
+  - **特点**: 牛津大学标准教材，从准备知识、气体动力学、热力学四大定律到配分函数、量子气体（FD/BE）、相变与黑洞热力学全景通关神作。
+- **推荐教材**: 《Statistical Mechanics》 (3rd Edition) —— R. K. Pathria & Paul D. Beale (Elsevier，中译《统计力学》)
+- **场论与临界现象进阶**: 《Statistical Physics of Fields》 —— Mehran Kardar (剑桥大学出版社，中译《场的统计物理学》)
 
 ---
 
